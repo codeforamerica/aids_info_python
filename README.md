@@ -17,6 +17,9 @@ Usage
 
 >>> info.search('combivir')
 {'combivir': {'data': 'here'}}
+
+>>> # You can also get back just the XML data.
+... xml_data = info.search('combivir', output_format=None)
 ```
 
 
