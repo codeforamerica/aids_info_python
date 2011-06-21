@@ -30,6 +30,11 @@ class TestDrugInfoSearchMethod(unittest.TestCase):
                         'displayxml=true&name=combivir')
         api.urlopen.assert_called_with(expected_url)
 
+    def test_xml_data_is_output(self):
+        info = DrugInfo()
+        info.search('combivir', output_format=None)
+        self.assertFalse(api.xml2dict.called)
+
 
 if __name__ == '__main__':
     unittest.main()
