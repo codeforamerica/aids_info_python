@@ -1,3 +1,0 @@
-[submodule "epa/api"]
-	path = epa/api
-	url = git://github.com/codeforamerica/Python-API-Template.git
